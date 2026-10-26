@@ -8,7 +8,6 @@ class Openfirmament < Formula
   license :cannot_represent
 
   depends_on arch: :arm64
-  depends_on :macos
   depends_on macos: :sonoma
 
   def install
