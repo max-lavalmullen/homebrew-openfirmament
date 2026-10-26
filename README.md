@@ -15,7 +15,7 @@ No account, subscription, telemetry, paid API or runtime network connection.
 brew tap max-lavalmullen/openfirmament
 
 # Terminal CLI/TUI:
-brew install max-lavalmullen/openfirmament/openfirmament
+brew install --cask max-lavalmullen/openfirmament/openfirmament-cli
 openfirmament
 
 # Mac application:
@@ -23,8 +23,13 @@ brew install --cask max-lavalmullen/openfirmament/openfirmament-app
 ```
 
 Open **OpenFirmament** from Applications. Future versions can be installed with
-`brew upgrade openfirmament` and `brew upgrade --cask openfirmament-app`.
-This is a custom tap, not Homebrew's official core/cask catalog.
+`brew upgrade --cask openfirmament-cli` and `brew upgrade --cask openfirmament-app`.
+This is a custom tap, not Homebrew's official core/cask catalog. The CLI cask uses
+Homebrew 7's command-wrapper support and installs a prebuilt executable. Run
+`brew update` first on older Homebrew installations. The optional `openfirmament`
+formula is also available, but Homebrew's formula installation checks require
+current Xcode Command Line Tools even though the archive is prebuilt. Prefer the
+CLI cask or curl installer if those tools are unavailable.
 
 ## Download directly
 

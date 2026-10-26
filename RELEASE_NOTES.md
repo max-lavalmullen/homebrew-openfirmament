@@ -11,12 +11,12 @@ included; neither application needs a compiler, account or network access to run
 - Terminal: black sky, colored stars, braille constellation arcs, search and
   inspector, mouse/keyboard pan and zoom, observer selection, UTC time travel,
   300× playback, red-light mode and plain-text snapshots.
-- Installation: Homebrew formula for the CLI, Homebrew cask for the app, direct
+- Installation: Homebrew casks for the CLI and app, direct
   ZIP/tar downloads and a checksum-verifying curl CLI installer.
 
 ```sh
 brew tap max-lavalmullen/openfirmament
-brew install max-lavalmullen/openfirmament/openfirmament
+brew install --cask max-lavalmullen/openfirmament/openfirmament-cli
 brew install --cask max-lavalmullen/openfirmament/openfirmament-app
 ```
 
