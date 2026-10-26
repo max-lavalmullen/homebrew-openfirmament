@@ -40,11 +40,14 @@ CLI cask or curl installer if those tools are unavailable.
 Unzip the app and move **OpenFirmament.app** to Applications. The catalogs are
 already included; no compiler or separate astronomy download is required.
 
-**First launch:** this preview is ad-hoc signed, not Apple Developer ID signed or
-notarized. macOS may block the downloaded app. After trying to open it, follow
+**First launch — applies to both the app and CLI:** this preview is ad-hoc signed,
+not Apple Developer ID signed or notarized. In testing, Homebrew installed the CLI
+successfully but macOS Gatekeeper blocked its first execution with an unverified
+software warning. The downloaded app can be blocked too. After trying to open it, follow
 [Apple's instructions for opening an app you trust](https://support.apple.com/102445)
 in System Settings → Privacy & Security. We do not remove quarantine or disable
-Gatekeeper. A clean, warning-free first launch needs a future notarized release.
+Gatekeeper. A clean, warning-free first launch needs a future notarized release. The
+Homebrew/curl installer verifies download integrity, not Apple security approval.
 
 ## Install the CLI with curl
 

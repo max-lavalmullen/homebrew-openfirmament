@@ -8,9 +8,16 @@ cask "openfirmament-cli" do
   homepage "https://github.com/max-lavalmullen/homebrew-openfirmament"
 
   depends_on arch: :arm64
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   # An absolute executable path preserves its adjacent astronomy resource bundle.
   command_wrapper "openfirmament",
                   executable: "#{staged_path}/OpenFirmamentTerminal"
+
+  caveats <<~EOS
+    This preview is ad-hoc signed and not Apple-notarized.
+    macOS Gatekeeper can block OpenFirmamentTerminal on first execution.
+    Installation success does not mean Apple has verified the executable.
+    https://support.apple.com/102445
+  EOS
 end

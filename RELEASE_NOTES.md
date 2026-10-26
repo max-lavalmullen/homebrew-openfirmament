@@ -21,7 +21,8 @@ brew install --cask max-lavalmullen/openfirmament/openfirmament-app
 ```
 
 **First-launch limitation:** these are ad-hoc-signed, unnotarized previews.
-macOS may require explicit approval after the first attempted app launch via
+Homebrew CLI installation completed in testing, but Gatekeeper blocked its first
+execution. Both app and CLI can require explicit approval after attempted launch via
 System Settings → Privacy & Security. See [Apple's guidance](https://support.apple.com/102445).
 No installer disables Gatekeeper or removes quarantine.
 

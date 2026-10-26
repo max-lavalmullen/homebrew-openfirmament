@@ -8,7 +8,7 @@ cask "openfirmament-app" do
   homepage "https://github.com/max-lavalmullen/homebrew-openfirmament"
 
   depends_on arch: :arm64
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "OpenFirmament.app"
 
